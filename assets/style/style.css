@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --light-Cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+
+  --grayish-Blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: var(--dark-blue);
+}
+
+.wrapper {
+  background: var(--dark-grayish-blue);
+  padding: 30px;
+  width: 550px;
+  min-height: 280px;
+  border-radius: 17px;
+  position: relative;
+  padding-bottom: 55px;
+}
+
+.title {
+  margin-top: 20px;
+
+  color: var(--neon-green);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.advice-brackets {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  color: var(--light-Cyan);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.devider {
+  width: 100%;
+}
+
+.random-advice {
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background: var(--neon-green);
+
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+
+  position: absolute;
+
+  margin-top: 40px;
+  margin-left: -51.5%;
+}
+
+.random-advice img {
+  width: 33px;
+  margin-top: 6px;
+  height: 33px;
+}
+
+.random-advice:hover {
+  box-shadow: 0 0 30px var(--neon-green);
+}
+
+@media screen and (max-width: 570px) {
+  .wrapper {
+    width: 450px;
+  }
+  .title {
+    font-size: 13px;
+  }
+  .advice-brackets {
+    font-size: 20px;
+  }
+  .random-advice {
+    width: 50px;
+    height: 50px;
+    margin-left: -49.2%;
+    margin-top: 53px;
+  }
+  .random-advice img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .wrapper {
+    width: 330px;
+  }
+  .title {
+    font-size: 13px;
+  }
+  .advice-brackets {
+    font-size: 18px;
+  }
+  .random-advice {
+    width: 50px;
+    height: 50px;
+    margin-left: -49.2%;
+    margin-top: 53px;
+  }
+  .random-advice img {
+    width: 20px;
+    height: 20px;
+  }
+}

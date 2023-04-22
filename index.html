@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <title>Advice generator</title>
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
+  <body onload="randomAdvice()">
+    <div class="wrapper">
+      <p class="title">Advice #<span class="advice-id"></span></p>
+      <p class="advice-brackets">"<span class="advice"> </span>"</p>
+      <img
+        class="devider"
+        src="assets/images/pattern-divider-desktop.svg"
+        alt="Devider"
+      />
+      <button class="random-advice" onclick="randomAdvice()">
+        <img src="assets/images/icon-dice.svg" alt="Dice" />
+      </button>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
