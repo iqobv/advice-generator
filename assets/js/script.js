@@ -1,7 +1,6 @@
 const btnRandomAdvice = document.querySelector(".random-advice"),
   adviceId = document.querySelector(".advice-id"),
-  advice = document.querySelector(".advice"),
-  body = document.body;
+  advice = document.querySelector(".advice");
 
 function randomAdvice() {
   fetch("https://api.adviceslip.com/advice")
